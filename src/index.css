@@ -1,4 +1,40 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+.ease {
+  transition: ease-in-out;
+  transition-property: width;
+}
+.writeUps .first_writeUp {
+  font-family: Family "GT Alpina";
+  font-weight: 100;
+  line-height: 1em;
+  font-style: italic;
+  color: #230b59;
+  font-size: 60px;
+}
+
+.writeUps .second_writeUp {
+  font-family: Calibre, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 63px;
+  color: #230b59;
+  line-height: 1.2em;
+}
+
+.writeUps .third_WriteUp {
+  font-family: Calibre, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  font-weight: 50;
+  font-style: normal;
+  font-size: 20px;
+  color: #230b59;
+  line-height: 30px;
+}
