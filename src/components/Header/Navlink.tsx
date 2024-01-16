@@ -29,7 +29,7 @@ const Navlink = () => {
           key={linkIndex}>
           {prefix()}
         </li>
-        <div className='w-[0rem] h-[0.2rem] transition-all ease bg-buttonPrimary peer-hover:block peer-hover:w-auto peer-hover:duration-1000'></div>
+        <div className='underline w-[0rem] h-[0.2rem] transition-all ease bg-buttonPrimary peer-hover:block peer-hover:w-full peer-hover:duration-500 mt-[-10px]'></div>
       </div>
     );
   });
