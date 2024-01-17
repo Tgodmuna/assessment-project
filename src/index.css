@@ -56,7 +56,8 @@
 .exploreheader,
 .automationWriteup,
 .TaxLossHarvesting,
-.pricing {
+.pricing 
+.alphin{
   font-family: "GT Alpina", ui-serif, Georgia, Cambria, "Times New Roman", Times,
     serif;
 }
@@ -69,17 +70,9 @@
   filter: drop-shadow(-04.7442px 17.1565px 0.72222px rgba(0, 0, 0, 0.1));
 }
 
-/* .Gradient:before {
+.Gradient:hover {
   background: linear-gradient(180deg, #4840bb, #ad6035);
 }
-.Gradient2:hover:not(:active),
-.button_secondaryButtonOnLight__tcBIH:hover:not(:active) {
-  background: linear-gradient(180deg, #4840bb, #ad6035);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border: 1px solid transparent;
-} */
 
 .animeDuration {
   animation-duration: 3.4s;
@@ -91,4 +84,7 @@
 .buttonBorderStly:hover {
   border-image: linear-gradient(180deg,#bdc6f5,#f4b896);
   border-image-slice: 1;
+}
+.fontweight{
+    font-weight: 3rem;
 }
