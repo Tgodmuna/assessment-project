@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       colors: {
         buttonPrimary: "#4840bb",
+        lightOrange: "#f4b896",
+        textColor: "#230b59",
       },
     },
   },
