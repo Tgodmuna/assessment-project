@@ -51,5 +51,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: contain;
-
+}
+.exploreheader{
+    font-family: "GT Alpina", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
