@@ -1,16 +1,6 @@
-import React from "react";
+import { companyInfo } from "./footerData";
 
 const AboutColumn = () => {
-  const companyInfo = [
-    "About Us",
-    "Newsroom",
-    "Reviews",
-    "Careers",
-    "Legal",
-    "Sitemap",
-    "Back to top",
-  ];
-
   const About: JSX.Element[] = companyInfo.map((topic, index) => {
     return (
       <div className='flex flex-col gap-1 hover:cursor-pointer' key={index}>

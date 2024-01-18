@@ -1,7 +1,7 @@
 import React from "react";
+import { BondTopic } from "./footerData";
 
 const Bond = () => {
-  const BondTopic = ["Bond"];
   const Bond: JSX.Element[] = BondTopic.map((ele, index) => {
     return (
       <div

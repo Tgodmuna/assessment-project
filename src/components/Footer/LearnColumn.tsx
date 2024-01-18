@@ -1,16 +1,7 @@
 import React from "react";
+import { financialGuides } from "./footerData";
 
 const LearnColumn = () => {
-  const financialGuides = [
-    "Blog",
-    "Help Center",
-    "What level of risk suits you best?",
-    "Home Planning Guide",
-    "Financial Health Guide",
-    "Equity and IPO Guide",
-    "IRA Contributions Calculator",
-  ];
-
   const Learn: JSX.Element[] = financialGuides.map((topic, index) => {
     return (
       <div className='flex flex-col gap-1 hover:cursor-pointer' key={index}>

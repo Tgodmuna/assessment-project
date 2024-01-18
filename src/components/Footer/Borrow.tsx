@@ -1,7 +1,6 @@
-import React from "react";
+import { BorrowTopic } from "./footerData";
 
 const Borrow = () => {
-  const BorrowTopic = ["Borrow"];
   const Borrowing: JSX.Element[] = BorrowTopic.map((ele, index) => {
     return (
       <div

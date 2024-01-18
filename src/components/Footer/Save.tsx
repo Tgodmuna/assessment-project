@@ -1,7 +1,6 @@
-import React from "react";
+import { SavingTopic } from "./footerData";
 
 const Save = () => {
-  const SavingTopic = ["cash", "ATM locator"];
   const saving: JSX.Element[] = SavingTopic.map((ele, index) => {
     return (
       <div
