@@ -5,8 +5,8 @@ import Ratings from "./Ratings";
 
 const Hero = () => {
   return (
-    <div className='flex flex-col w-full '>
-      <div className="flex">
+    <div className='flex flex-col w-full bg-gradient-to-b from-slate-400 to-lightOrange'>
+      <div className='flex'>
         <WriteUps />
         <InvestmentImage />
       </div>

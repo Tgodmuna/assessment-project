@@ -2,7 +2,7 @@ import React from "react";
 
 const BottomWriteUps = () => {
   return (
-    <div className='flex justify-between pb-[5rem]'>
+    <div className='flex justify-between pb-[5rem] w-[80vw]'>
       <div className='flex flex-col gap-4'>
         <div className='flex flex-col justify-between h-[6rem] p-2 '>
           <h1 className='text-textColor text-3xl capitalize font-bold'>
@@ -40,9 +40,11 @@ const BottomWriteUps = () => {
           or get in the market in minutes. Our technology lets you automate your
           paycheck and organize cash effortlessly.
         </p>
-      <a href='kjhjhj' className='text-textColor text-xs underline capitalize'>
-        learn more
-      </a>
+        <a
+          href='kjhjhj'
+          className='text-textColor text-xs underline capitalize'>
+          learn more
+        </a>
       </div>
     </div>
   );

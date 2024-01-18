@@ -15,7 +15,7 @@ const AutomationWriteUp = () => {
         automatically diversify deposits, and can help save you taxes, all
         without you ever lifting a finger.
       </p>
-      <Button className='w-[6rem] relative left-[-6.5rem] hover:opacity-25 capitalize '>get started</Button>
+      <Button className='w-[6rem] Gradient relative left-[-6.5rem] hover:opacity-25 capitalize '>get started</Button>
 
       <div className="w-[15rem] flex bg-slate-50 text-textColor ">
         <div className="flex justify-between items-start w-full">

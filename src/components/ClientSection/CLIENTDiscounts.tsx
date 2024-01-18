@@ -2,14 +2,14 @@ import React from "react";
 
 const CLIENTDiscounts = () => {
   return (
-    <div className='flex pb-[7rem]'>
+    <div className='flex pb-[7rem] bg-gradient-to-b from-slate-400 to-lightOrange'>
       <picture>
         <source
           type='image/webp'
           srcSet='https://www.wealthfront.com/next/contenthash/next/optimized/nest-egg.contenthash.9f875a83916bb512617d581306273ac5a8261b3a.webp 1x, https://www.wealthfront.com/next/contenthash/next/optimized/nest-egg@2x.contenthash.30c0a1cc7acc24caad8b0a3f215d92f9269d72da.webp 2x'
         />
-              <img
-                  className="absolute left-[-2.5rem] top-[302rem]"
+        <img
+          className='absolute left-[-2.5rem] top-[302rem]'
           width='401'
           height='401'
           alt=''

@@ -25,7 +25,7 @@ const WriteUps = () => {
         </p>
       </div>
       {/* call to action button */}
-      <Button width='6rem' className='capitalize '>
+      <Button width='6rem' className='capitalize Gradient '>
         get started
       </Button>
     </div>

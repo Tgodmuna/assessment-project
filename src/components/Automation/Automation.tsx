@@ -5,7 +5,7 @@ import TaxLossHarvesting from "./AutomationTask";
 
 const Automation = () => {
   return (
-    <section className='flex flex-col'>
+    <section className='flex flex-col bg-gradient-to-b from-slate-400 to-lightOrange'>
       <div className='flex'>
         <AutomationVideo
           poster='https://www.wealthfront.com/next/contenthash/next/optimized/vanlife.contenthash.1a2473e3a801186e41d5f34a78ff67e1e92c81c2.jpg'

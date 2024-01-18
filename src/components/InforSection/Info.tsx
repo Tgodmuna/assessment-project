@@ -4,7 +4,7 @@ import BottomWriteUps from "./BottomWriteUps";
 
 const Info = () => {
   return (
-    <section className=' infor w-[80vw] m-auto '>
+    <section className=' infor w-full flex flex-col justify-center items-center m-auto bg-gradient-to-b from-slate-400 to-lightOrange '>
       <Header />
       <BottomWriteUps />
     </section>

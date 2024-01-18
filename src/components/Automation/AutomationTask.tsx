@@ -24,7 +24,7 @@ const TaxLossHarvesting: React.FC<TaxLossHarvestingProps> = () => {
 
         <a
           aria-label='Learn more about Tax-Loss Harvesting'
-          className='z-10 relative items-center justify-center text-textColor  border-textColor rounded-md transition-all font-medium 2xl:px-6 2xl:py-3.5 px-5 py-3 border   inline-flex whitespace-nowrap mb-4'
+          className='z-10 buttonBorderStly  relative items-center justify-center text-textColor  border-textColor rounded-md transition-all font-medium 2xl:px-6 2xl:py-3.5 px-5 py-3 border   inline-flex whitespace-nowrap mb-4'
           href='https://www.wealthfront.com/tax-loss-harvesting'
           rel='noopener noreferrer'
           target='_blank'>
