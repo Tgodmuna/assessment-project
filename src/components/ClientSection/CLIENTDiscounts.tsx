@@ -2,7 +2,7 @@ import React from "react";
 
 const CLIENTDiscounts = () => {
   return (
-    <div className='flex'>
+    <div className='flex pb-[7rem]'>
       <picture>
         <source
           type='image/webp'
