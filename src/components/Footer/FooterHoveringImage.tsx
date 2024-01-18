@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "../../App";
 
 interface Position {
   x: number;
@@ -6,29 +7,28 @@ interface Position {
 }
 
 interface FooterHoveringImageProps {
-  position: Position;
+  position: Position | undefined;
 }
 
 const FooterHoveringImage: React.FC<FooterHoveringImageProps> = ({
   position,
 }) => {
-  console.log("from hoveringImage", position);
+  const hoverContext = useContext(Context);
+
   return (
     <img
       style={{
         position: "absolute",
-        top: `${position.y}px`,
-        left: `${position.x}px`,
+        top: `${position?.y}px`,
+        left: `${position?.x}px`,
       }}
       src='https://www.wealthfront.com/next/contenthash/next/optimized/sloth.contenthash.5e9cec20bd02d53291f49c10db6ee6e9f78d47e2.png'
       alt='hover'
-      className={
-        " absolute  w-[10rem] left-[" +
-        position.x +
-        "px]  top-[" +
-        position.y +
-        "px] }"
-      }
+      className={`absolute opacity-0  w-[10rem] ${
+        hoverContext?.isFooterHovered
+          ? "transition-all duration-1000 filter-shadow  "
+          : "transition-all  duration-1000"
+      } `}
     />
   );
 };

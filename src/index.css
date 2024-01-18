@@ -84,6 +84,7 @@
 .buttonBorderStly:hover {
   border-image: linear-gradient(180deg,#bdc6f5,#f4b896);
   border-image-slice: 1;
+  transition:all 1s;
 }
 .fontweight{
     font-weight: 3rem;

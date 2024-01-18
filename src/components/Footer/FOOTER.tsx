@@ -7,6 +7,7 @@ import LearnColumn from "./LearnColumn";
 import AboutColumn from "./AboutColumn";
 import FooterHoveringImage from "./FooterHoveringImage";
 import { Context } from "../../App";
+import FooterWriteUp from "./FooterWriteUp";
 
 const FOOTER = () => {
   //saving the mouse state
@@ -44,28 +45,32 @@ const FOOTER = () => {
     };
   }, [HoveredContext?.isFooterHovered]);
   return (
-    <section
-      className='bg-[#18172B] h-full w-full flex p-[3rem]'
-      onMouseEnter={() => handleHoveringIN()}
-      onMouseLeave={() => handleHoveringOUT()}>
-      <div className='w-[30vw] pt-[13px]'>
-        <img src='/images/wordmark.svg' alt='company logo' className='' />
-      </div>
-      <div className='flex w-[100rem] m-auto justify-between p-2'>
-        <InvestingColumn />
-        <div className='flex flex-col items-start gap-[3rem] w-fit '>
-          <Save />
-          <Bond />
-          <Borrow />
+    <footer className='flex flex-col'>
+      <section
+        className='bg-[#18172B] h-full w-full flex p-[3rem]'
+        onMouseEnter={() => handleHoveringIN()}
+        onMouseLeave={() => handleHoveringOUT()}>
+        <div className='w-[30vw] pt-[13px]'>
+          <img src='/images/wordmark.svg' alt='company logo' className='' />
         </div>
-        <LearnColumn />
-        <AboutColumn />
-      </div>
 
-      {HoveredContext?.isFooterHovered && (
-        <FooterHoveringImage position={{ x: position.x, y: position.y }} />
-      )}
-    </section>
+        <div className='flex w-[100rem] m-auto justify-between p-2'>
+          <InvestingColumn />
+          <div className='flex flex-col items-start gap-[3rem] w-fit '>
+            <Save />
+            <Bond />
+            <Borrow />
+          </div>
+          <LearnColumn />
+          <AboutColumn />
+        </div>
+
+        {HoveredContext?.isFooterHovered && (
+          <FooterHoveringImage position={{ x: position.x, y: position.y }} />
+        )}
+      </section>
+      <FooterWriteUp />
+    </footer>
   );
 };
 

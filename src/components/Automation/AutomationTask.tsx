@@ -43,7 +43,7 @@ const TaxLossHarvesting: React.FC<TaxLossHarvestingProps> = () => {
               height={431}
               alt=''
               loading='lazy'
-              src='https://www.wealthfront.com/next/contenthash/next/optimized/sloth.contenthash.5e9cec20bd02d53291f49c10db6ee6e9f78d47e2.png'
+              src="/images/sloth.webp"
             />
           </picture>
         </div>

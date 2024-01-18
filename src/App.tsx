@@ -28,17 +28,17 @@ function App() {
   return (
     <Context.Provider value={{ isFooterHovered, setisFooterHovered }}>
       <div className='App min-h-screen  '>
-        {/* <Header />
-      <Hero  />
-      <RiskTolerance />
-      <Explore />
-      <Automation />
-      <Pricing />
-      <Info />
-      <Client />
-      <CLIENTDiscounts />
-      <AboutDelievry />
-      <FAQ__UI/> */}
+        <Header />
+        <Hero />
+        <RiskTolerance />
+        <Explore />
+        <Automation />
+        <Pricing />
+        <Info />
+        <Client />
+        <CLIENTDiscounts />
+        <AboutDelievry />
+        <FAQ__UI />
         <FOOTER />
       </div>
     </Context.Provider>
