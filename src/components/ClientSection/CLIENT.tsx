@@ -82,6 +82,7 @@ const Client = () => {
           src='https://www.wealthfront.com/next/contenthash/next/stock_investing/stock_investing_module_banner.contenthash.9b308b700fe787a1a09997f0a728f374b3f0d32d.png'
         />
       </picture>
+      
     </section>
   );
 };
