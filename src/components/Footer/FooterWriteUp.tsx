@@ -2,10 +2,9 @@ import React from "react";
 
 const FooterWriteUp = () => {
   return (
-    <div className='flex flex-col w-full bg-[#18172B] text-white '>
-
+    <div className='flex flex-col w-full bg-[#18172B] text-white'>
           <hr border-2 />
-      <div className='  max-w-full space-y-4 pt-8 pb-16 text-[10px] text-steel md:px-0 lg:px-0'>
+      <div className=' p max-w-full space-y-4 pt-8 pb-16 text-[10px] text-steel md:px-2 lg:px-2'>
         <ol className='flex flex-col gap-2'>
           <li>
             Nerdwallet and Investopedia (the “Endorsers”) receive cash

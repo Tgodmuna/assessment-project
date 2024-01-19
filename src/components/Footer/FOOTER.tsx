@@ -50,10 +50,12 @@ const FOOTER = () => {
         className='bg-[#18172B] h-full w-full flex p-[3rem]'
         onMouseEnter={() => handleHoveringIN()}
         onMouseLeave={() => handleHoveringOUT()}>
+        {/* logo */}
         <div className='w-[30vw] pt-[13px]'>
           <img src='/images/wordmark.svg' alt='company logo' className='' />
         </div>
 
+        {/* footer links */}
         <div className='flex w-[100rem] m-auto justify-between p-2'>
           <InvestingColumn />
           <div className='flex flex-col items-start gap-[3rem] w-fit '>
@@ -64,12 +66,13 @@ const FOOTER = () => {
           <LearnColumn />
           <AboutColumn />
         </div>
-
+      </section>
+      <div className='hoverHolder'>
         {HoveredContext?.isFooterHovered && (
           <FooterHoveringImage position={{ x: position.x, y: position.y }} />
         )}
-      </section>
-      <FooterWriteUp />
+      </div>
+      <FooterWriteUp/>
     </footer>
   );
 };
