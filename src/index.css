@@ -56,8 +56,7 @@
 .exploreheader,
 .automationWriteup,
 .TaxLossHarvesting,
-.pricing 
-.alphin{
+.pricing .alphin {
   font-family: "GT Alpina", ui-serif, Georgia, Cambria, "Times New Roman", Times,
     serif;
 }
@@ -82,10 +81,25 @@
 }
 
 .buttonBorderStly:hover {
-  border-image: linear-gradient(180deg,#bdc6f5,#f4b896);
+  border-image: linear-gradient(180deg, #bdc6f5, #f4b896);
   border-image-slice: 1;
-  transition:all 1s;
+  transition: all 1s;
 }
-.fontweight{
-    font-weight: 3rem;
+.fontweight {
+  font-weight: 3rem;
 }
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 22rem;
+  height: 7px;
+  background: linear-gradient(90deg, #bdc6f5, #f4b896);
+  border-radius: 5px;
+  position: absolute;
+}
+input[type="range"]::-webkit-slider-thumb {
+  top: -4px;
+  width: 50px;
+  position: relative;
+  background-color: #ad6035;
+}
+

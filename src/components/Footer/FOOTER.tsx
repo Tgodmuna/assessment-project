@@ -44,8 +44,11 @@ const FOOTER = () => {
       window.removeEventListener("mousemove", handleMouseMove as EventListener);
     };
   }, [HoveredContext?.isFooterHovered]);
+
   return (
-    <footer className='flex flex-col'>
+    <footer
+      className='flex flex-col
+    '>
       <section
         className='bg-[#18172B] h-full w-full flex p-[3rem]'
         onMouseEnter={() => handleHoveringIN()}
@@ -67,12 +70,11 @@ const FOOTER = () => {
           <AboutColumn />
         </div>
       </section>
-      <div className='hoverHolder'>
-        {HoveredContext?.isFooterHovered && (
-          <FooterHoveringImage position={{ x: position.x, y: position.y }} />
-        )}
-      </div>
-      <FooterWriteUp/>
+      {/* footer write up */}
+      <FooterWriteUp />
+      {HoveredContext?.isFooterHovered && (
+        <FooterHoveringImage position={{ x: position.x, y: position.y }} />
+      )}
     </footer>
   );
 };
