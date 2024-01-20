@@ -8,7 +8,7 @@ const Header = () => {
     <header className='flex justify-between items-center w-[100vw] bg-inherit mt-1 h-[4rem] '>
       <Logo />
       <Navlink />
-      <div className='flex  w-[20rem] justify-center items-center '>
+      <div className='md:flex hidden  w-[20rem] justify-center items-center '>
         <Login />
         <Button width='10rem'>Get started</Button>
       </div>

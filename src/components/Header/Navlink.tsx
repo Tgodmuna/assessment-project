@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { FaChevronDown } from "react-icons/fa";
+import { HiBars2 } from "react-icons/hi2";
 const Navlink = () => {
   //links
   const Navlink = ["cash", "bonds", "automated investment", "stocks", "learn"];
@@ -22,7 +23,7 @@ const Navlink = () => {
       return link;
     };
     return (
-      <div className='flex flex-col'>
+      <div className=' hidden lg:flex flex-col '>
         <li
           className='text-nowrap text-center text-sm  text-blue-950 capitalize p-2 font-semibold group peer'
           aria-label='nav link'
@@ -37,6 +38,7 @@ const Navlink = () => {
   return (
     <ul className='flex justify-center gap-3 items-center w-[40rem] h-[3rem] '>
       {Link}
+      <HiBars2 color=" black" size={40} className="md:hidden relative left-[3rem]" />
     </ul>
   );
 };
