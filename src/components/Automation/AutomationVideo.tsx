@@ -8,8 +8,8 @@ interface VideoProps {
 
 const VideoComponent: React.FC<VideoProps> = ({ poster, webmSource }) => {
   return (
-    <div className='flex flex-col'>
-      <div className='flex flex-col'>
+    <div className=' VideoComponent flex  md:flex-col w-full'>
+      <div className='md:flex flex-col hidden'>
         <video
           src={webmSource}
           aria-hidden='true'
@@ -25,10 +25,10 @@ const VideoComponent: React.FC<VideoProps> = ({ poster, webmSource }) => {
         </p>
       </div>
 
-      <div className=''>
+      <div className='m-auto md:relative   mt-[5rem] left-[-28rem] top-[-10rem]  md:flex-none items-end gap-1 flex flex-col video tooltip w-full'>
         <LabelToolTip
           className={
-            " w-[15rem] relative top-[-9rem] left-[27rem] filter-shadow flex flex-col bg-opacity-60 justify-between p-3  h-[5rem] bg-slate-50 rounded-xl "
+            " md:w-[15rem] w-fit md:relative top-[-9rem] left-[27rem] filter-shadow flex flex-col bg-opacity-60 justify-between p-3  h-[5rem] bg-slate-50 rounded-xl "
           }>
           <div className='flex justify-between items-center text-textColor'>
             <div className='flex gap-1 '>
@@ -51,7 +51,7 @@ const VideoComponent: React.FC<VideoProps> = ({ poster, webmSource }) => {
         </LabelToolTip>
         <LabelToolTip
           className={
-            " w-[13rem] relative top-[-19rem] left-[28rem] filter-shadow flex flex-col bg-opacity-60 shadow-black justify-between p-3  h-[4rem] bg-slate-50 rounded-xl "
+            " md:w-[13rem] w-fit md:relative top-[-19rem] left-[28rem] filter-shadow flex flex-col bg-opacity-60 shadow-black justify-between p-3  h-[4rem] bg-slate-50 rounded-xl "
           }>
           <div className='flex justify-between items-center text-textColor'>
             <div className='flex gap-1 '>
@@ -69,7 +69,7 @@ const VideoComponent: React.FC<VideoProps> = ({ poster, webmSource }) => {
             </p>
           </div>
           <p className='capitalize text-xs text-center text-textColor'>
-            We saved you $78.11 on your taxes.
+            We automatically invest your $ 500 deposit.
           </p>
         </LabelToolTip>
       </div>

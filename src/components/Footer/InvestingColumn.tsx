@@ -14,7 +14,7 @@ const InvestingColumn = () => {
   });
 
   return (
-    <div className='flex flex-col items-start gap-4 w-[10vw]'>
+    <div className='flex flex-col md:items-start gap-2 items-center md:gap-4 w-fit md:w-[10vw]'>
       <h1 className='font-bold text-xl text-white capitalize'>investing</h1>
       {Investing}
     </div>

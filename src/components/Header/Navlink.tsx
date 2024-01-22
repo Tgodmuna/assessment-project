@@ -38,7 +38,7 @@ const Navlink = () => {
   return (
     <ul className='flex justify-center gap-3 items-center w-[40rem] h-[3rem] '>
       {Link}
-      <HiBars2 color=" black" size={40} className="md:hidden relative left-[3rem]" />
+      <HiBars2 color=" white" size={40} className="md:hidden relative left-[3rem]" />
     </ul>
   );
 };

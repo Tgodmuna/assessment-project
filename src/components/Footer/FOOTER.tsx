@@ -47,19 +47,22 @@ const FOOTER = () => {
 
   return (
     <footer
-      className='flex flex-col
-    '>
+      className='flex flex-col'>
       <section
-        className='bg-[#18172B] h-full w-full flex p-[3rem]'
+        className='bg-[#18172B] h-full w-full  flex md:flex-row flex-col md:p-[3rem]'
         onMouseEnter={() => handleHoveringIN()}
         onMouseLeave={() => handleHoveringOUT()}>
         {/* logo */}
-        <div className='w-[30vw] pt-[13px]'>
-          <img src='/images/wordmark.svg' alt='company logo' className='' />
+        <div className='md:w-[30vw] m-auto pt-[13px] md:flex-col md:h-[40vw]'>
+          <img
+            src='/images/wordmark.svg'
+            alt='company logo'
+            className=''
+          />
         </div>
 
-        {/* footer links */}
-        <div className='flex w-[100rem] m-auto justify-between p-2'>
+        {/* large screen footer links */}
+        <div className='md:flex hidden w-[100rem] m-auto justify-between p-2'>
           <InvestingColumn />
           <div className='flex flex-col items-start gap-[3rem] w-fit '>
             <Save />
@@ -69,9 +72,26 @@ const FOOTER = () => {
           <LearnColumn />
           <AboutColumn />
         </div>
+
+        {/* small screen */}
+        <div className='flex md:hidden'>
+          <div className='flex w-full flex-wrap'>
+            <InvestingColumn />
+            <LearnColumn />
+            <AboutColumn />
+          </div>
+          <div className='w-full flex-wrap'>
+            <Save />
+            <Bond />
+            <Borrow />
+          </div>
+        </div>
       </section>
+
       {/* footer write up */}
       <FooterWriteUp />
+
+      {/* hover image */}
       {HoveredContext?.isFooterHovered && (
         <FooterHoveringImage position={{ x: position.x, y: position.y }} />
       )}

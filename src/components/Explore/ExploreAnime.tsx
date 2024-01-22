@@ -3,7 +3,7 @@ import { Button } from "../Shared/Button";
 
 const ExploreAnime = () => {
   return (
-    <div className='w-[60vw]  anime '>
+    <div className='anime md:block hidden'>
       <img
         src='images/anime.jpeg'
         alt='noen'

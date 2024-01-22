@@ -1,4 +1,3 @@
-import { createContext } from "vm";
 import Automation from "./components/Automation/Automation";
 import AboutDelievry from "./components/ClientSection/AboutDelievry";
 import Client from "./components/ClientSection/CLIENT";
@@ -27,7 +26,7 @@ function App() {
 
   return (
     <Context.Provider value={{ isFooterHovered, setisFooterHovered }}>
-      <div className='App min-h-screen  '>
+      <div className='App'>
         <Header />
         <Hero />
         <RiskTolerance />
@@ -36,10 +35,10 @@ function App() {
         <Pricing />
         <Info />
         <Client />
-        <CLIENTDiscounts />
+        <CLIENTDiscounts /> 
         <AboutDelievry />
         <FAQ__UI />
-        <FOOTER />
+        <FOOTER /> 
       </div>
     </Context.Provider>
   );

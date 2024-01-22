@@ -3,7 +3,7 @@ import React from "react";
 const Illustration: React.FC = () => {
   return (
     <>
-      <div className='pointer-events-none relative left-1/2 w-[283px] -translate-x-1/2 -translate-y-3/4 transform md:left-auto md:right-0 md:top-[5rem] md:w-[343px] md:-translate-y-1/2 md:translate-x-0 lg:w-[443px] 2xl:w-[553px] 3xl:w-auto'>
+      <div className='pointer-events-none absolute left-[-2rem] top-[10rem] w-[283px] -translate-x-1/2 -translate-y-3/4 transform md:left-auto md:right-0 md:top-[5rem] md:w-[343px] md:-translate-y-1/2 md:translate-x-0 lg:w-[443px] 2xl:w-[553px] 3xl:w-auto p-1'>
         <picture>
           <source
             type='image/webp'

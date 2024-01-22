@@ -2,8 +2,8 @@ import React from "react";
 
 const CLIENTDiscounts = () => {
   return (
-    <div className='flex pb-[7rem] bg-gradient-to-b from-slate-400 to-lightOrange'>
-      <picture>
+    <div className=' clientDiscount w-full flex flex-col md:flex-row pb-[7rem] bg-gradient-to-b from-slate-400 to-lightOrange'>
+      <picture className="hidden md:block">
         <source
           type='image/webp'
           srcSet='https://www.wealthfront.com/next/contenthash/next/optimized/nest-egg.contenthash.9f875a83916bb512617d581306273ac5a8261b3a.webp 1x, https://www.wealthfront.com/next/contenthash/next/optimized/nest-egg@2x.contenthash.30c0a1cc7acc24caad8b0a3f215d92f9269d72da.webp 2x'
@@ -18,15 +18,15 @@ const CLIENTDiscounts = () => {
         />
       </picture>
 
-      <div className='flex flex-col gap-[2rem] w-[60vw] m-auto p-2'>
-        <div className='flex flex-col w-full gap-4'>
-          <p className='text-textColor text-3xl my-3 alphin font-extralight'>
+      <div className='flex flex-col w-full gap-3  lg:gap-[3rem] md:gap-[2rem] md:w-[60vw] m-auto md:p-2 p-3'>
+        <div className='flex flex-col w-full gap-2'>
+          <p className='text-textColor text-[30px] md:text-3xl my-3 alphin font-extralight'>
             You can count on us
           </p>
           <hr className='border-textColor border' />
         </div>
 
-        <div className='flex flex-col  w-full gap-4'>
+        <div className='flex flex-col  w-full gap-2'>
           <p className='text-textColor text-3xl  alphin font-extralight w-[20rem]'>
             <span className='text-textColor font-extrabold text-4xl italic'>
               $50 Billion
@@ -36,7 +36,7 @@ const CLIENTDiscounts = () => {
           <hr className='border-textColor border' />
         </div>
 
-        <div className='flex flex-col  w-full gap-4'>
+        <div className='flex flex-col  w-full gap-2'>
           <p className='text-textColor text-3xl  my-3 alphin font-extralight'>
             <span className='text-textColor font-extrabold text-4xl italic'>
               0%
@@ -46,7 +46,7 @@ const CLIENTDiscounts = () => {
           <hr className='border-textColor border' />
         </div>
 
-        <div className='flex flex-col  m-auto  w-full gap-4 '>
+        <div className='flex flex-col  m-auto  w-full gap-2 '>
           <p className='text-textColor text-3xl my-3 alphin font-extralight'>
             <span className='text-textColor font-extrabold text-4xl italic'>
               $500,000

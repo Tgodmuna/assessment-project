@@ -4,7 +4,7 @@ import ExploreAnime from "./ExploreAnime";
 
 const Explore = () => {
   return (
-    <section className='flex justify-center items-center w-full bg-gradient-to-b from-slate-400 to-lightOrange'>
+    <section className=' md:flex-row flex-col-reverse m-auto flex justify-center items-center w-full bg-gradient-to-b from-slate-400 to-lightOrange'>
       <ExploreWriteUp />
       <ExploreAnime />
     </section>

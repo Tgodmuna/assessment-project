@@ -51,11 +51,11 @@ const Ratings = () => {
   const Lists = () => {
     const list1 = Rating1.map((ele) => {
       return (
-        <li className='flex  flex-col justify-between items-center md:items-start md:w-full  md:m-1  relative top-[-0.5rem]'>
+        <li className='flex flex-col    md:justify-between md:items-start md:w-full  md:m-1  md:relative top-[-0.5rem]'>
           <p className='text-xl font-bold [color:#230b59]'>
             {ele.value}
           </p>
-          <p className='text-xs  w-[10rem] [color:#230b59] text-center capitalize'>
+          <p className='text-xs   w-[10rem] [color:#230b59] md:text-left text-center capitalize'>
             {ele.text}
             {ele.text === "google play store" && (
               <sup className='text-xs'>2</sup>
@@ -83,7 +83,7 @@ const Ratings = () => {
       );
     });
     return (
-      <section className='md:flex flex-col '>
+      <section className='md:flex-row flex flex-col '>
         <ul className=' justify-center items-center gap-[1rem]  mb-[2rem] w-full flex md:flex-row flex-col md:justify-center md:items-center md:gap-[3rem]  p-3 md:w-[50vw] bg-'>
           {list2}
         </ul>

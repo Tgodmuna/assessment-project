@@ -6,7 +6,7 @@ const InvestmentImage = () => {
       loading='lazy'
       src='/images/investment.jpeg'
       alt='investment and trends'
-      className=' shadow-md shadow-slate-500 w-auto  md:w-[100rem] object-contain md:self-start md:relative top-[3rem] '
+      className=' shadow-md shadow-slate-500 w-auto  md:w-[100rem] object-contain md:self-start md:relative '
     />
   );
 };

@@ -3,14 +3,14 @@ import Illustration from "./ILLustration";
 
 const Header = () => {
   return (
-    <div className=' header flex flex-col w-[80vw]'>
-      <div className='flex justify-between items-center h-[10rem] p-4'>
-        <h1 className=' text-4xl w-[45vw] capitalize text-textColor self-end'>
+    <div className=' header flex flex-col lg:w-2/3 md:w-[80vw] px-[2rem] '>
+      <div className='flex-col flex md:flex-row md:justify-between items-center h-[10rem] '>
+        <h1 className=' md:text-4xl md:w-[45vw] text-[40px] capitalize text-textColor md:self-end'>
           Investing that accounts for your needs.
         </h1>
         <Illustration />
       </div>
-      <hr className='border-textColor mt-[1rem]' />
+      <hr className='border-textColor text-4xl mt-[1rem]' />
     </div>
   );
 };

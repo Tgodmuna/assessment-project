@@ -11,7 +11,7 @@ const AboutColumn = () => {
   });
 
   return (
-    <div className='flex flex-col items-start gap-4 w-[10vw]'>
+    <div className='flex md:flex-col items-center md:items-start md:gap-4 w-[10vw] '>
       <h1 className='font-bold text-xl text-white'>About</h1>
       {About}
     </div>

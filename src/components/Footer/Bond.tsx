@@ -14,7 +14,7 @@ const Bond = () => {
   });
 
   return (
-    <div>
+    <div className='flex flex-col gap-3'>
       <h1 className='font-bold text-xl text-white '>Bond</h1>
       {Bond}
     </div>

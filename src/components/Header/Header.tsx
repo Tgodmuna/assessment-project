@@ -5,7 +5,7 @@ import Navlink from "./Navlink";
 
 const Header = () => {
   return (
-    <header className='flex justify-between items-center w-[100vw] bg-inherit mt-1 h-[4rem] '>
+    <header className='flex justify-between items-center w-[100vw] bg-inherit md:mt-1 h-[4rem] bg-gradient-to-b from-slate-400 to-lightOrange'>
       <Logo />
       <Navlink />
       <div className='md:flex hidden  w-[20rem] justify-center items-center '>
