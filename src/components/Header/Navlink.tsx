@@ -2,7 +2,9 @@ import { ReactNode, useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { HiBars2 } from "react-icons/hi2";
 import NavLinkDropDown1 from "./NavLinkDropDown1";
-const Navlink = () => {
+import { propType } from "./Header";
+
+const Navlink = (prop: propType) => {
   //links
   const Navlink = ["cash", "bonds", "automated investment", "stocks", "learn"];
   const [isDropDownShowing1, setisDropDownShowing1] = useState(false);
@@ -14,9 +16,7 @@ const Navlink = () => {
   const Link = Navlink.map((link, linkIndex) => {
     //add down arrow on certain navlink elements
     const prefix: () => ReactNode | string = () => {
-      if (
-        (link === "stocks" && linkIndex === 3)
-      ) {
+      if (link === "stocks" && linkIndex === 3) {
         return (
           <div className='flex items-center justify-center gap-1'>
             {link}
@@ -67,6 +67,7 @@ const Navlink = () => {
     <ul className='flex justify-center gap-3 items-center w-[40rem] h-[3rem] '>
       {Link}
       <HiBars2
+        onClick={prop.handleActive}
         color=' white'
         size={40}
         className='md:hidden relative left-[3rem]'

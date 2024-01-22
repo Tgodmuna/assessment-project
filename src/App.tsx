@@ -1,4 +1,5 @@
 import React, { Suspense, lazy, useState } from "react";
+import { MobileSideBar } from "./components/Header/Header";
 
 const Automation = lazy(() => import("./components/Automation/Automation"));
 const AboutDelievry = lazy(
@@ -30,12 +31,16 @@ export const Context = React.createContext<undefined | contextType>(undefined);
 
 function App() {
   const [isFooterHovered, setisFooterHovered] = useState<boolean>(false);
-
+  const [isMobileActive, setisMobileActive] = useState(false);
+  const handleisActive = () => {
+    setisMobileActive(!isMobileActive);
+    return isMobileActive
+  };
   return (
-    <Context.Provider value={{ isFooterHovered, setisFooterHovered }}>
+    <Context.Provider  value={{ isFooterHovered, setisFooterHovered }}>
       <div className='App'>
         <Suspense fallback={<div>Loading...</div>}>
-          <Header />
+          <Header handleActive={handleisActive} />
           <Hero />
           <RiskTolerance />
           <Explore />
@@ -47,6 +52,7 @@ function App() {
           <AboutDelievry />
           <FAQ__UI />
           <FOOTER />
+          {isMobileActive && <MobileSideBar handleActive={handleisActive} />}
         </Suspense>
       </div>
     </Context.Provider>
