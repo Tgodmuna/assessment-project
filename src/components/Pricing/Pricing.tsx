@@ -1,5 +1,5 @@
 import React from "react";
-import { RiErrorWarningLine } from "react-icons/ri";
+import { IoIosInformationCircleOutline } from "react-icons/io";
 import { Button } from "../Shared/Button";
 
 const Pricing = () => {
@@ -20,7 +20,7 @@ const Pricing = () => {
         </p>
         <span className=' absolute left-[15rem] top-[24.2] z-10 md:ml-[-2rem]'>
           <a title='more infor relative' href='jnsjn'>
-            <RiErrorWarningLine />
+            <IoIosInformationCircleOutline />
           </a>
         </span>
       </div>
