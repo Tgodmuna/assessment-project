@@ -7,7 +7,7 @@ const Illustration: React.FC = () => {
         <picture>
           <source
             type='image/webp'
-            srcSet='https://www.wealthfront.com/next/contenthash/next/optimized/box-house.contenthash.a4141741727ff198ee4bf8fa2592bf54f1550bd2.webp 1x, /next/contenthash/next/optimized/box-house@2x.contenthash.abd3dc556bbdc5a4b34df5fbf6e6865ccfc5ae90.webp 2x'
+            srcSet='https://www.wealthfront.com/next/contenthash/next/optimized/box-house.contenthash.a4141741727ff198ee4bf8fa2592bf54f1550bd2.webp 1x, https://www.wealthfront.com/next/contenthash/next/optimized/box-house@2x.contenthash.abd3dc556bbdc5a4b34df5fbf6e6865ccfc5ae90.webp 2x'
           />
           <img
             width={663}
