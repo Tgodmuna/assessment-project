@@ -4,7 +4,7 @@ interface TaxLossHarvestingProps {}
 
 const TaxLossHarvesting: React.FC<TaxLossHarvestingProps> = () => {
   return (
-    <div className=' TaxLossHarvesting mt-[-7rem] mx-auto w-full max-w-[2024px] space-y-3 px-8 pt-44 lg:px-12 lg:pt-0 lg:px-16 lg:pt-32'>
+    <div className=' TaxLossHarvesting mt-[-15rem] mx-auto w-full max-w-[2024px] space-y-3 px-8 pt-44 lg:px-12  lg:pt-32'>
       <div className='relative flex flex-col items-center lg:text-center'>
         <div className='animate-float pointer-events-none mb-2 lg:mb-0 lg:absolute -right-8 bottom-full h-[302px] w-[302px] sm:h-[250px] sm:w-[250px] lg:-right-12 lg:bottom-[0%] lg:-bottom-10 lg:-right-16 lg:h-[302px] lg:w-[302px] xl:h-[302px] xl:w-[302px] 2xl:h-[431px] 2xl:w-[431px] 3xl:right-14'>
           <picture>
