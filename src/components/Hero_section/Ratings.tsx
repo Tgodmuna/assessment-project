@@ -1,5 +1,3 @@
-import { FaStar } from "react-icons/fa6";
-import { JsxElement } from "typescript";
 //types for the ratings
 type rating_1Type = {
   value: string;
